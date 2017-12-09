@@ -4,10 +4,8 @@ import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.app.AlertDialog;
-
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -94,8 +92,6 @@ public class MainActivity extends AppCompatActivity {
         String result = getString(R.string.dialog_message) + getResult() + "." + "\n\n" +
                 getString(R.string.take_test_again);
 
-        //new AlertDialog.Builder(this)
-        //new AlertDialog.Builder(new ContextThemeWrapper(this, R.style.AlertDialogCustom))
         new AlertDialog.Builder(this, R.style.AlertDialogCustom)
                 .setTitle(R.string.dialog_title)
                 .setMessage(result)
@@ -113,14 +109,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void onRadioButtonClicked(View view) {
         updateAnswers();
-        finishButton.setVisibility(View.VISIBLE);
-//        if (isTestCompleted()) {
-//            finishButton.setVisibility(View.VISIBLE);
-//        } else {
-//            if (lastQuestion == questionNumber){
-//                Toast.makeText(this, getString(R.string.toast), Toast.LENGTH_LONG).show();
-//            }
-//        }
+//        finishButton.setVisibility(View.VISIBLE);
+        if (isTestCompleted()) {
+            finishButton.setVisibility(View.VISIBLE);
+        } else {
+            if (lastQuestion == questionNumber){
+                Toast.makeText(this, getString(R.string.toast), Toast.LENGTH_LONG).show();
+            }
+        }
     }
 
     private void updateViews() {

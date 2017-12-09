@@ -38,7 +38,7 @@
 
     <string name="question_2">3. How do you feel about the idea of keeping a personal diary, planning your work for the year, month, next week, day?</string>
     <string-array name="question_2_options">
-        <item>I think that most of the time it's a waste of time;</item>
+        <item>I think that most of the time it\'s a waste of time;</item>
         <item>I tried to do it, but not regularly;</item>
         <item>Positively, since I have been doing this for a long time.</item>
     </string-array>
@@ -176,7 +176,4 @@
 
     <string name="toast">You have skipped one ore more questions.
         Press \"previous\" button and answer all questions to accomplish the test.</string>
-
-
-
 </resources>
