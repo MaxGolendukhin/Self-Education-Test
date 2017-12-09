@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="options">
+        <item>@array/question_0_options</item>
+        <item>@array/question_1_options</item>
+        <item>@array/question_2_options</item>
+        <item>@array/question_3_options</item>
+        <item>@array/question_4_options</item>
+        <item>@array/question_5_options</item>
+        <item>@array/question_6_options</item>
+        <item>@array/question_7_options</item>
+        <item>@array/question_8_options</item>
+        <item>@array/question_9_options</item>
+        <item>@array/question_10_options</item>
+        <item>@array/question_11_options</item>
+        <item>@array/question_12_options</item>
+        <item>@array/question_13_options</item>
+        <item>@array/question_14_options</item>
+        <item>@array/question_15_options</item>
+        <item>@array/question_16_options</item>
+        <item>@array/question_17_options</item>
+    </array>
+</resources>

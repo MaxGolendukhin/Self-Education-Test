@@ -1,0 +1,179 @@
+<resources>
+    <string name="app_name">Self Education Test</string>
+
+    <string-array name="questions">
+        <item>@string/question_0</item>
+        <item>@string/question_1</item>
+        <item>@string/question_2</item>
+        <item>@string/question_3</item>
+        <item>@string/question_4</item>
+        <item>@string/question_5</item>
+        <item>@string/question_6</item>
+        <item>@string/question_7</item>
+        <item>@string/question_8</item>
+        <item>@string/question_9</item>
+        <item>@string/question_10</item>
+        <item>@string/question_11</item>
+        <item>@string/question_12</item>
+        <item>@string/question_13</item>
+        <item>@string/question_14</item>
+        <item>@string/question_15</item>
+        <item>@string/question_16</item>
+        <item>@string/question_17</item>
+    </string-array>
+
+    <string name="question_0">1. What do your friends value on you?</string>
+    <string-array name="question_0_options">
+        <item>Because you are a faithful and loyal friend;</item>
+        <item>Strong and ready to stand up for friends in difficult times;</item>
+        <item>An erudite, interesting interlocutor.</item>
+    </string-array>
+
+    <string name="question_1">2. Choose which characteristic is most suitable for you:</string>
+    <string-array name="question_1_options">
+        <item>Purposeful;</item>
+        <item>Hardworking;</item>
+        <item>Responsive.</item>
+    </string-array>
+
+    <string name="question_2">3. How do you feel about the idea of keeping a personal diary, planning your work for the year, month, next week, day?</string>
+    <string-array name="question_2_options">
+        <item>I think that most of the time it's a waste of time;</item>
+        <item>I tried to do it, but not regularly;</item>
+        <item>Positively, since I have been doing this for a long time.</item>
+    </string-array>
+
+    <string name="question_3">4. What is the main obstacle for you to improve professionally, to study better?</string>
+    <string-array name="question_3_options">
+        <item>There is not enough time;</item>
+        <item>There is no suitable literature and conditions;</item>
+        <item>Not always enough willpower and perseverance.</item>
+    </string-array>
+
+    <string name="question_4">5. What are the typical reasons for your mistakes and misses?</string>
+    <string-array name="question_4_options">
+        <item>Inattentive;</item>
+        <item>I overestimate my abilities;</item>
+        <item>I do not know for sure.</item>
+    </string-array>
+
+    <string name="question_5">6. Choose characteristic most suitable for you:</string>
+    <string-array name="question_5_options">
+        <item>Persistent;</item>
+        <item>Plodding;</item>
+        <item>Benevolent.</item>
+    </string-array>
+
+    <string name="question_6">7. Choose characteristic most suitable for you:</string>
+    <string-array name="question_6_options">
+        <item>Resolute;</item>
+        <item>Curious;</item>
+        <item>Equitable.</item>
+    </string-array>
+
+    <string name="question_7">8. Choose characteristic most suitable for you:</string>
+    <string-array name="question_7_options">
+        <item>Idea\'s generator;</item>
+        <item>Critic;</item>
+        <item>Organizer.</item>
+    </string-array>
+
+    <string name="question_8">9. Choose qualities most developed in you:</string>
+    <string-array name="question_8_options">
+        <item>Strength of will;</item>
+        <item>Memory;</item>
+        <item>Obligation.</item>
+    </string-array>
+
+    <string name="question_9">10. What do you usually do when you have free time?</string>
+    <string-array name="question_9_options">
+        <item>I do my favorite thing, I have a hobby;</item>
+        <item>I read;</item>
+        <item>I spend time with friends, or with my family.</item>
+    </string-array>
+
+    <string name="question_10">11. What of the following areas is of your cognitive interest?</string>
+    <string-array name="question_10_options">
+        <item>Science fiction;</item>
+        <item>Religion;</item>
+        <item>Psychology.</item>
+    </string-array>
+
+    <string name="question_11">12. Who would you most like to realize yourself?</string>
+    <string-array name="question_11_options">
+        <item>Athlete;</item>
+        <item>Scientists;</item>
+        <item>Artist.</item>
+    </string-array>
+
+    <string name="question_12">13. What did your teachers think of you?</string>
+    <string-array name="question_12_options">
+        <item>Industrious;</item>
+        <item>Worthy;</item>
+        <item>Disciplined.</item>
+    </string-array>
+
+    <string name="question_13">14. Which of the three principles is closest to you?</string>
+    <string-array name="question_13_options">
+        <item>Live and enjoy life;</item>
+        <item>Live to know more and be able to do;</item>
+        <item>Life is a difficult thing.</item>
+    </string-array>
+
+    <string name="question_14">15. Who is closest to your ideal?</string>
+    <string-array name="question_14_options">
+        <item>A person is healthy, strong in spirit;</item>
+        <item>A man who knows and knows a lot;</item>
+        <item>The person is independent and self-assured.</item>
+    </string-array>
+
+    <string name="question_15">16. Will you succeed in life achieve what you dream?</string>
+    <string-array name="question_15_options">
+        <item>I think yes;</item>
+        <item>Probably yes;</item>
+        <item>If I get lucky.</item>
+    </string-array>
+
+    <string name="question_16">17. What movies do you like most?</string>
+    <string-array name="question_16_options">
+        <item>Adventurous and romantic;</item>
+        <item>Comedy and entertainment;</item>
+        <item>Philosophical.</item>
+    </string-array>
+
+    <string name="question_17">18. Imagine that you earned a million. How would you prefer to spend it?</string>
+    <string-array name="question_17_options">
+        <item>I would travel and see the world;</item>
+        <item>I would go abroad to study or invest money in my favorite business;</item>
+        <item>I would buy a cottage with a swimming pool, furniture, a chic car and live for my own pleasure.</item>
+    </string-array>
+
+
+
+    <string name="start_test">start test</string>
+    <string name="greeting">\t\tThe application is a test to identify the ability for independent
+        learning and self-development. \n\t\tIt consists of 18 questions, to answer which you are free
+        in any sequence. You can also return to the questions already answered.</string>
+
+    <string name="dialog_title">Test result</string>
+    <string name="dialog_message">Your ability for independent learning and self-development is\ </string>
+    <string name="very_low">very low</string>
+    <string name="low">low</string>
+    <string name="below_average">below average</string>
+    <string name="slightly_below_average">slightly below average</string>
+    <string name="average">average</string>
+    <string name="slightly_above_average">slightly above average</string>
+    <string name="above_average">above average</string>
+    <string name="high">high</string>
+    <string name="very_high">very high</string>
+    <string name="take_test_again">Take test again?</string>
+
+    <string name="previous">previous</string>
+    <string name="finish">finish</string>
+    <string name="next">next</string>
+    <string name="ok_label">OK</string>
+    <string name="cancel_label">CANCEL</string>
+
+
+
+</resources>

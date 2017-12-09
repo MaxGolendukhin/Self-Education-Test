@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="question_1_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_2_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_3_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_4_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_5_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_6_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_7_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_8_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_9_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_10_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_11_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_12_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_13_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_14_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_15_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_16_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_17_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="question_18_weights">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+</resources>
