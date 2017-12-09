@@ -1,13 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Self Education Test</string>
+
+    <string-array name="questions">
+        <item>@string/question_0</item>
+        <item>@string/question_1</item>
+        <item>@string/question_2</item>
+        <item>@string/question_3</item>
+        <item>@string/question_4</item>
+        <item>@string/question_5</item>
+        <item>@string/question_6</item>
+        <item>@string/question_7</item>
+        <item>@string/question_8</item>
+        <item>@string/question_9</item>
+        <item>@string/question_10</item>
+        <item>@string/question_11</item>
+        <item>@string/question_12</item>
+        <item>@string/question_13</item>
+        <item>@string/question_14</item>
+        <item>@string/question_15</item>
+        <item>@string/question_16</item>
+        <item>@string/question_17</item>
+    </string-array>
+
     <string name="greeting">\t\tПриложение представляет собой тест на выявление способности к
         самостоятельному обучению и саморазвитию. \n\t\tОн состоит из 18 вопросов, отвечать на которые
         Вы вольны в любой последовательности, возвращаюсь вновь к уже отвеченным вопросам.</string>
+
     <string name="question_0">1. За что Вас ценят Ваши друзья?</string>
+    <string-array name="question_0_options">
+        <item>За то, что Вы преданный и верный друг;</item>
+        <item>Сильный и готов в трудную минуту постоять за друзей;</item>
+        <item>Эрудированный, интересный собеседник.</item>
+    </string-array>
+
     <string name="question_1">2. На основе сравнительной самооценки выберите, какая характеристика Вам более всего подходит?</string>
+    <string-array name="question_1_options">
+        <item>Целеустремленный;</item>
+        <item>Трудолюбивый;</item>
+        <item>Отзывчивый.</item>
+    </string-array>
+
     <string name="question_2">3. Как Вы относитесь к идее ведения личного ежедневника, к планированию своей работы на год, месяц, ближайшую неделю, день?</string>
+    <string-array name="question_2_options">
+        <item>Думаю, что чаще всего это пустая трата времени;</item>
+        <item>Я пытался это делать, но не регулярно;</item>
+        <item>Положительно, так как я давно это делаю.</item>
+    </string-array>
+
     <string name="question_3">4. Что Вам больше всего мешает профессионально самосовершенствоваться, лучше учиться?</string>
+    <string-array name="question_3_options">
+        <item>Нет достаточно времени;</item>
+        <item>Нет подходящей литературы и условий;</item>
+        <item>Не всегда хватает силы воли и настойчивости.</item>
+    </string-array>
+
+
     <string name="question_4">5. Каковы типичные причины Ваших ошибок и промахов?</string>
     <string name="question_5">6. На основе сравнительной самооценки выберите, какая характеристика Вам более всего подходит?</string>
     <string name="question_6">7. На основе сравнительной самооценки выберите, какая характеристика Вам более всего подходит?</string>
