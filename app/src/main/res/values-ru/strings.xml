@@ -39,4 +39,5 @@
     <string name="finish">закончить</string>
     <string name="next">следующий</string>
     <string name="cancel_label">ОТМЕНА</string>
+    <string name="toast">Вы пропустили один или более вопросов. Вернитесь к предыдущим вопросам, чтобы ответить на них.</string>
 </resources>
