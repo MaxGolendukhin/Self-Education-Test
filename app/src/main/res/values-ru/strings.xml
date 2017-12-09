@@ -6,4 +6,37 @@
         Вы вольны в любой последовательности, возвращаюсь вновь к уже отвеченным вопросам.</string>
     <string name="question_0">1. За что Вас ценят Ваши друзья?</string>
     <string name="question_1">2. На основе сравнительной самооценки выберите, какая характеристика Вам более всего подходит?</string>
+    <string name="question_2">3. Как Вы относитесь к идее ведения личного ежедневника, к планированию своей работы на год, месяц, ближайшую неделю, день?</string>
+    <string name="question_3">4. Что Вам больше всего мешает профессионально самосовершенствоваться, лучше учиться?</string>
+    <string name="question_4">5. Каковы типичные причины Ваших ошибок и промахов?</string>
+    <string name="question_5">6. На основе сравнительной самооценки выберите, какая характеристика Вам более всего подходит?</string>
+    <string name="question_6">7. На основе сравнительной самооценки выберите, какая характеристика Вам более всего подходит?</string>
+    <string name="question_7">8. На основе сравнительной самооценки выберите, какая характеристика Вам более всего подходит?</string>
+    <string name="question_8">9. На основе сравнительной самооценки выберите, какие качества у Вас развиты в большей степени?</string>
+    <string name="question_9">10. Что чаще всего Вы делаете, когда у Вас появляется свободное время?</string>
+    <string name="question_10">11. Что из ниже приведенных сфер для Вас в последнее время представляет познавательный интерес?</string>
+    <string name="question_11">12. Кем бы Вы могли себя максимально реализовать?</string>
+    <string name="question_12">13. Каким чаще всего считают или считали Вас учителя?</string>
+    <string name="question_13">14. Какой из трех принципов Вам ближе всего и которого Вы придерживаетесь чаще всего?</string>
+    <string name="question_14">15. Кто ближе всего к Вашему идеалу?</string>
+    <string name="question_15">16. Удастся ли Вам в жизни добиться того, о чем Вы мечтаете?</string>
+    <string name="question_16">17. Какие фильмы Вам больше всего нравятся?</string>
+    <string name="question_17">18. Представьте себе, что Вы заработали миллион. Куда бы Вы предпочли его истратить?</string>
+    <string name="start_test">начать тест</string>
+    <string name="dialog_title">Результат теста</string>
+    <string name="dialog_message">Ваша способность к самообучению и саморазвитию</string>
+    <string name="very_low">очень низкая</string>
+    <string name="low">низкая</string>
+    <string name="slightly_below_average">чуть ниже среднего</string>
+    <string name="below_average">ниже среднего</string>
+    <string name="average">средняя</string>
+    <string name="slightly_above_average">чуть выше среднего</string>
+    <string name="above_average">выше среднего</string>
+    <string name="high">высокий</string>
+    <string name="very_high">очень высокий</string>
+    <string name="take_test_again">Пройти тест заново</string>
+    <string name="previous">предыдущий</string>
+    <string name="finish">закончить</string>
+    <string name="next">следующий</string>
+    <string name="cancel_label">ОТМЕНА</string>
 </resources>

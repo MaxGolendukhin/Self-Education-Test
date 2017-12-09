@@ -171,7 +171,7 @@
     <string name="previous">previous</string>
     <string name="finish">finish</string>
     <string name="next">next</string>
-    <string name="ok_label">OK</string>
+    <string name="ok_label" translatable="false">OK</string>
     <string name="cancel_label">CANCEL</string>
 
     <string name="toast">You have skipped one ore more questions.
