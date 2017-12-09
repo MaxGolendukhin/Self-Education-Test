@@ -95,8 +95,8 @@ public class MainActivity extends AppCompatActivity {
                 getString(R.string.take_test_again);
 
         //new AlertDialog.Builder(this)
-        new AlertDialog.Builder(new ContextThemeWrapper(this, R.style.AlertDialogCustom))
-        //new AlertDialog.Builder(this, R.style.AlertDialogCustom)
+        //new AlertDialog.Builder(new ContextThemeWrapper(this, R.style.AlertDialogCustom))
+        new AlertDialog.Builder(this, R.style.AlertDialogCustom)
                 .setTitle(R.string.dialog_title)
                 .setMessage(result)
                 .setPositiveButton(getString(R.string.ok_label), new DialogInterface.OnClickListener() {
@@ -117,7 +117,9 @@ public class MainActivity extends AppCompatActivity {
 //        if (isTestCompleted()) {
 //            finishButton.setVisibility(View.VISIBLE);
 //        } else {
-//            if (lastQuestion == questionNumber) Toast.makeText(this, getString(R.string.toast), Toast.LENGTH_LONG);
+//            if (lastQuestion == questionNumber){
+//                Toast.makeText(this, getString(R.string.toast), Toast.LENGTH_LONG).show();
+//            }
 //        }
     }
 
