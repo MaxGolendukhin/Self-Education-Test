@@ -5,11 +5,11 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorButtonNormal">@color/colorAccent</item>
         <item name="android:windowBackground">@color/windowBackground</item>
-        <item name="android:alertDialogTheme">@style/AlertDialogCustom</item>
+        <!--item name="android:alertDialogTheme">@style/AlertDialogCustom</item-->
     </style>
 
-    <style name="AlertDialogCustom" parent="@style/AlertDialog.AppCompat.Light">
-        <item name="android:colorBackground">@color/colorAccent</item>
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:colorBackground">#000FAF</item>
     </style>
 
     <style name="radio_button_style">
