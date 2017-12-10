@@ -23,9 +23,6 @@
         <item>@string/question_17</item>
     </string-array>
 
-    <string name="greeting">\t\tПриложение представляет собой тест на выявление способности к
-        самостоятельному обучению и саморазвитию. \n\t\tОн состоит из 18 вопросов, отвечать на которые
-        Вы вольны в любой последовательности, возвращаюсь вновь к уже отвеченным вопросам.</string>
 
     <string name="question_0">1. За что Вас ценят Ваши друзья?</string>
     <string-array name="question_0_options">
@@ -34,21 +31,24 @@
         <item>Эрудированный, интересный собеседник.</item>
     </string-array>
 
-    <string name="question_1">2. На основе сравнительной самооценки выберите, какая характеристика Вам более всего подходит?</string>
+    <string name="question_1">2. На основе сравнительной самооценки выберите,
+        какая характеристика Вам более всего подходит?</string>
     <string-array name="question_1_options">
         <item>Целеустремленный;</item>
         <item>Трудолюбивый;</item>
         <item>Отзывчивый.</item>
     </string-array>
 
-    <string name="question_2">3. Как Вы относитесь к идее ведения личного ежедневника, к планированию своей работы на год, месяц, ближайшую неделю, день?</string>
+    <string name="question_2">3. Как Вы относитесь к идее ведения личного ежедневника,
+        к планированию своей работы на год, месяц, ближайшую неделю, день?</string>
     <string-array name="question_2_options">
         <item>Думаю, что чаще всего это пустая трата времени;</item>
         <item>Я пытался это делать, но не регулярно;</item>
         <item>Положительно, так как я давно это делаю.</item>
     </string-array>
 
-    <string name="question_3">4. Что Вам больше всего мешает профессионально самосовершенствоваться, лучше учиться?</string>
+    <string name="question_3">4. Что Вам больше всего мешает профессионально самосовершенствоваться,
+        лучше учиться?</string>
     <string-array name="question_3_options">
         <item>Нет достаточно времени;</item>
         <item>Нет подходящей литературы и условий;</item>
@@ -57,28 +57,127 @@
 
     <string name="question_4">5. Каковы типичные причины Ваших ошибок и промахов?</string>
     <string-array name="question_4_options">
+        <item>Невнимательный;</item>
+        <item>Переоцениваю свои способности;</item>
+        <item>Точно не знаю.</item>
+    </string-array>
+
+    <string name="question_5">6. На основе сравнительной самооценки выберите,
+        какая характеристика Вам более всего подходит?</string>
+    <string-array name="question_5_options">
         <item>Настойчивый;</item>
         <item>Усидчивый;</item>
         <item>Доброжелательный.</item>
     </string-array>
 
+    <string name="question_6">7. На основе сравнительной самооценки выберите,
+        какая характеристика Вам более всего подходит?</string>
+    <string-array name="question_6_options">
+        <item>Решительный;</item>
+        <item>Любознательный;</item>
+        <item>Справедливый.</item>
+    </string-array>
 
-    <string name="question_5">6. На основе сравнительной самооценки выберите, какая характеристика Вам более всего подходит?</string>
-    <string name="question_6">7. На основе сравнительной самооценки выберите, какая характеристика Вам более всего подходит?</string>
-    <string name="question_7">8. На основе сравнительной самооценки выберите, какая характеристика Вам более всего подходит?</string>
-    <string name="question_8">9. На основе сравнительной самооценки выберите, какие качества у Вас развиты в большей степени?</string>
-    <string name="question_9">10. Что чаще всего Вы делаете, когда у Вас появляется свободное время?</string>
-    <string name="question_10">11. Что из ниже приведенных сфер для Вас в последнее время представляет познавательный интерес?</string>
+    <string name="question_7">8. На основе сравнительной самооценки выберите,
+        какая характеристика Вам более всего подходит?</string>
+    <string-array name="question_7_options">
+        <item>Генератор идей;</item>
+        <item>Критик;</item>
+        <item>Организатор.</item>
+    </string-array>
+
+    <string name="question_8">9. На основе сравнительной самооценки выберите,
+        какие качества у Вас развиты в большей степени?</string>
+    <string-array name="question_8_options">
+        <item>Сила воли;</item>
+        <item>Память;</item>
+        <item>Обязательность.</item>
+    </string-array>
+
+    <string name="question_9">10. Что чаще всего Вы делаете,
+        когда у Вас появляется свободное время?</string>
+    <string-array name="question_9_options">
+        <item>Занимаюсь любимым делом, у меня есть хобби;</item>
+        <item>Читаю;</item>
+        <item>Провожу время с друзьями, либо в кругу семьи.</item>
+    </string-array>
+
+    <string name="question_10">11. Что из ниже приведенных сфер для Вас в последнее время
+        представляет познавательный интерес?</string>
+    <string-array name="question_10_options">
+        <item>Научная фантастика;</item>
+        <item>Религия;</item>
+        <item>Психология.</item>
+    </string-array>
+
     <string name="question_11">12. Кем бы Вы могли себя максимально реализовать?</string>
+    <string-array name="question_11_options">
+        <item>Спортсменом;</item>
+        <item>Ученым;</item>
+        <item>Художником.</item>
+    </string-array>
+
     <string name="question_12">13. Каким чаще всего считают или считали Вас учителя?</string>
-    <string name="question_13">14. Какой из трех принципов Вам ближе всего и которого Вы придерживаетесь чаще всего?</string>
+    <string-array name="question_12_options">
+        <item>Трудолюбивым;</item>
+        <item>Сообразительным;</item>
+        <item>Дисциплинированным.</item>
+    </string-array>
+
+    <string name="question_13">14. Какой из трех принципов Вам ближе всего и
+        которого Вы придерживаетесь чаще всего?</string>
+    <string-array name="question_13_options">
+        <item>Живи и наслаждайся жизнью;</item>
+        <item>Жить, чтобы больше знать и уметь;</item>
+        <item>Жизнь прожить - не поле перейти.</item>
+    </string-array>
+
     <string name="question_14">15. Кто ближе всего к Вашему идеалу?</string>
+    <string-array name="question_14_options">
+        <item>Человек здоровый, сильный духом;</item>
+        <item>Человек, много знающий и умеющий;</item>
+        <item>Человек независимый и уверенный в себе.</item>
+    </string-array>
+
     <string name="question_15">16. Удастся ли Вам в жизни добиться того, о чем Вы мечтаете?</string>
+    <string-array name="question_15_options">
+        <item>Думаю, что да;</item>
+        <item>Скорее всего да;</item>
+        <item>Как повезет.</item>
+    </string-array>
+
     <string name="question_16">17. Какие фильмы Вам больше всего нравятся?</string>
-    <string name="question_17">18. Представьте себе, что Вы заработали миллион. Куда бы Вы предпочли его истратить?</string>
+    <string-array name="question_16_options">
+        <item>Приключенческие и романтические;</item>
+        <item>Комедийно-развлекательные;</item>
+        <item>Философские.</item>
+    </string-array>
+
+    <string name="question_17">18. Представьте себе, что Вы заработали миллион.
+        Куда бы Вы предпочли его истратить?</string>
+    <string-array name="question_17_options">
+        <item>Путешествовал бы и посмотрел мир;</item>
+        <item>Поехал бы учиться за границу или вложил бы деньги в любимое дело;</item>
+        <item>Купил бы коттедж с бассейном, мебель,
+            шикарную машину и жил бы в свое удовольствие.</item>
+    </string-array>
+
+    <string name="greeting">\t\tПриложение представляет собой тест на выявление способности к
+        самостоятельному обучению и саморазвитию. \n\t\tОн состоит из 18 вопросов,
+        отвечать на которые Вы вольны в любой последовательности,
+        возвращаюсь вновь к уже отвеченным вопросам.</string>
+
     <string name="start_test">начать тест</string>
+    <string name="previous">предыдущий</string>
+    <string name="finish">закончить</string>
+    <string name="next">следующий</string>
+    <string name="cancel_label">ОТМЕНА</string>
+    <string name="toast">Вы пропустили один или несколько вопросов.
+        Вернитесь к предыдущим вопросам, чтобы ответить на них.</string>
+
     <string name="dialog_title">Результат теста</string>
     <string name="dialog_message">Ваша способность к самообучению и саморазвитию</string>
+
     <string name="very_low">очень низкая</string>
     <string name="low">низкая</string>
     <string name="slightly_below_average">чуть ниже среднего</string>
@@ -89,9 +188,4 @@
     <string name="high">высокий</string>
     <string name="very_high">очень высокий</string>
     <string name="take_test_again">Пройти тест заново</string>
-    <string name="previous">предыдущий</string>
-    <string name="finish">закончить</string>
-    <string name="next">следующий</string>
-    <string name="cancel_label">ОТМЕНА</string>
-    <string name="toast">Вы пропустили один или более вопросов. Вернитесь к предыдущим вопросам, чтобы ответить на них.</string>
 </resources>

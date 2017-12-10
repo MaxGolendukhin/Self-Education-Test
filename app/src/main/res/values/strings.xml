@@ -148,15 +148,22 @@
         <item>I would buy a cottage with a swimming pool, furniture, a chic car and live for my own pleasure.</item>
     </string-array>
 
-
-
-    <string name="start_test">start test</string>
     <string name="greeting">\t\tThe application is a test to identify the ability for independent
         learning and self-development. \n\t\tIt consists of 18 questions, to answer which you are free
         in any sequence. You can also return to the questions already answered.</string>
 
+    <string name="start_test">start test</string>
+    <string name="previous">previous</string>
+    <string name="finish">finish</string>
+    <string name="next">next</string>
+    <string name="ok_label" translatable="false">OK</string>
+    <string name="cancel_label">CANCEL</string>
+    <string name="toast">You have skipped one ore more questions.
+        Press \"previous\" button and answer all questions to accomplish the test.</string>
+
     <string name="dialog_title">Test result</string>
     <string name="dialog_message">Your ability for independent learning and self-development is\ </string>
+
     <string name="very_low">very low</string>
     <string name="low">low</string>
     <string name="below_average">below average</string>
@@ -167,13 +174,4 @@
     <string name="high">high</string>
     <string name="very_high">very high</string>
     <string name="take_test_again">Take test again?</string>
-
-    <string name="previous">previous</string>
-    <string name="finish">finish</string>
-    <string name="next">next</string>
-    <string name="ok_label" translatable="false">OK</string>
-    <string name="cancel_label">CANCEL</string>
-
-    <string name="toast">You have skipped one ore more questions.
-        Press \"previous\" button and answer all questions to accomplish the test.</string>
 </resources>
