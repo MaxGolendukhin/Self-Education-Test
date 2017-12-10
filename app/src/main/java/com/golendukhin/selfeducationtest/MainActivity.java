@@ -187,8 +187,7 @@ public class MainActivity extends AppCompatActivity {
      * Checks if all questions are answered and shows button to finish test.
      * In case if user have answered last question, but have skipped one ore more questions before,
      * toast with notification appears.
-     * Method is marked as unused, but don't believe to IntelliJ, onClick -
-     * tag is defined in styles.xml.
+     * Method is marked as unused, but don't believe to IntelliJ,onClick - tag is defined in styles.xml.
      */
     public void onRadioButtonClicked(View view) {
         updateAnswers();
