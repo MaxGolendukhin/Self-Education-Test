@@ -23,7 +23,6 @@
         <item>@string/question_17</item>
     </string-array>
 
-
     <string name="question_0">1. За что Вас ценят Ваши друзья?</string>
     <string-array name="question_0_options">
         <item>За то, что Вы преданный и верный друг;</item>
