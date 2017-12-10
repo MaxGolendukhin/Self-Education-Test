@@ -12,6 +12,9 @@ public class GreetingActivity extends Activity {
         setContentView(R.layout.greeting_activity);
     }
 
+    /**
+     * Starts MainActivity after user has pressed begin test button.
+     */
     public void startTest(View view) {
         finish();
         startActivity(new Intent(this, MainActivity.class));

@@ -18,12 +18,12 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private final int firstQuestion = 0;
     private final int lastQuestion = 17;
-    private int [][] answersWeights;
-    private String options [][] = new String [18][3];
-    private String questions [];
+    private int[][] answersWeights;
+    private String options[][] = new String[18][3];
+    private String questions[];
 
     private int questionNumber = 0;
-    private boolean answers [][] = new boolean [18][3];
+    private boolean answers[][] = new boolean[18][3];
 
     private TextView questionTextView;
     private RadioButton firstOptionRadioButton, secondOptionRadioButton, thirdOptionRadioButton;
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         if (savedInstanceState != null) {
             questionNumber = savedInstanceState.getInt("questionNumber");
-            answers = (boolean [][]) savedInstanceState.getSerializable("answers");
+            answers = (boolean[][]) savedInstanceState.getSerializable("answers");
         }
 
         super.onCreate(savedInstanceState);
@@ -53,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
         setTestParameters();
         updateViews();
 
-        if (isTestCompleted() && savedInstanceState != null) finishButton.setVisibility(View.VISIBLE);
+        if (isTestCompleted() && savedInstanceState != null)
+            finishButton.setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -75,37 +76,39 @@ public class MainActivity extends AppCompatActivity {
         }
         typedArray.recycle();
 
-        answersWeights = new int [][]
+        answersWeights = new int[][]
                 {{2, 1, 3},
-                {3, 2, 1},
-                {1, 2, 3},
-                {3, 2, 1},
-                {2, 3, 1},
-                {3, 2, 2},
-                {2, 3, 1},
-                {3, 2, 1},
-                {2, 3, 1},
-                {2, 3, 1},
-                {1, 2, 3},
-                {1, 3, 2},
-                {3, 2, 1},
-                {1, 3, 2},
-                {1, 3, 2},
-                {3, 2, 1},
-                {2, 1, 3},
-                {2, 3, 1},};
+                        {3, 2, 1},
+                        {1, 2, 3},
+                        {3, 2, 1},
+                        {2, 3, 1},
+                        {3, 2, 2},
+                        {2, 3, 1},
+                        {3, 2, 1},
+                        {2, 3, 1},
+                        {2, 3, 1},
+                        {1, 2, 3},
+                        {1, 3, 2},
+                        {3, 2, 1},
+                        {1, 3, 2},
+                        {1, 3, 2},
+                        {3, 2, 1},
+                        {2, 1, 3},
+                        {2, 3, 1},};
     }
 
-    public  void previous(View view) {
+    public void previous(View view) {
         questionNumber--;
 
         Animation animationOut = AnimationUtils.loadAnimation(this, R.anim.translate_right_off);
         animationOut.setAnimationListener(new Animation.AnimationListener() {
             @Override
-            public void onAnimationStart(Animation animation) {}
+            public void onAnimationStart(Animation animation) {
+            }
 
             @Override
-            public void onAnimationRepeat(Animation animation) {}
+            public void onAnimationRepeat(Animation animation) {
+            }
 
             @Override
             public void onAnimationEnd(Animation animation) {
@@ -117,16 +120,18 @@ public class MainActivity extends AppCompatActivity {
         radioGroup.startAnimation(animationOut);
     }
 
-    public void next (View view) {
+    public void next(View view) {
         questionNumber++;
 
         Animation animationOut = AnimationUtils.loadAnimation(this, R.anim.translate_left_off);
         animationOut.setAnimationListener(new Animation.AnimationListener() {
             @Override
-            public void onAnimationStart(Animation animation) {}
+            public void onAnimationStart(Animation animation) {
+            }
 
             @Override
-            public void onAnimationRepeat(Animation animation) {}
+            public void onAnimationRepeat(Animation animation) {
+            }
 
             @Override
             public void onAnimationEnd(Animation animation) {
@@ -138,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
         radioGroup.startAnimation(animationOut);
     }
 
-    public void finish (View view) {
+    public void finish(View view) {
         String result = getString(R.string.dialog_message) + getResult() + "." + "\n\n" +
                 getString(R.string.take_test_again);
 
@@ -170,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
         if (isTestCompleted()) {
             finishButton.setVisibility(View.VISIBLE);
         } else {
-            if (lastQuestion == questionNumber){
+            if (lastQuestion == questionNumber) {
                 Toast.makeText(this,
                         getString(R.string.toast), Toast.LENGTH_LONG).show();
             }
@@ -184,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
         else if (questionNumber == lastQuestion) nextButton.setVisibility(View.GONE);
 
         Animation animationFadeIn = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
-        Animation  animationFadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
+        Animation animationFadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
 
         questionTextView.setText(questions[questionNumber]);
         questionTextView.startAnimation(animationFadeOut);
@@ -208,7 +213,7 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean isTestCompleted() {
         int testCompletion = -1;
-        for (boolean [] answer : answers){
+        for (boolean[] answer : answers) {
             if (answer[0] || answer[1] || answer[2]) testCompletion++;
         }
         return testCompletion == lastQuestion;
@@ -230,7 +235,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int calculatePoints() {
         int points = 0;
-        for (int i = 0; i < answers.length; i++){
+        for (int i = 0; i < answers.length; i++) {
             if (answers[i][0]) points += answersWeights[i][0];
             else if (answers[i][1]) points += answersWeights[i][1];
             else if (answers[i][2]) points += answersWeights[i][2];

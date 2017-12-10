@@ -36,14 +36,16 @@
         <item>Responsive.</item>
     </string-array>
 
-    <string name="question_2">3. How do you feel about the idea of keeping a personal diary, planning your work for the year, month, next week, day?</string>
+    <string name="question_2">3. How do you feel about the idea of keeping a personal diary,
+        planning your work for the year, month, next week, day?</string>
     <string-array name="question_2_options">
         <item>I think that most of the time it\'s a waste of time;</item>
         <item>I tried to do it, but not regularly;</item>
         <item>Positively, since I have been doing this for a long time.</item>
     </string-array>
 
-    <string name="question_3">4. What is the main obstacle for you to improve professionally, to study better?</string>
+    <string name="question_3">4. What is the main obstacle for you to improve professionally,
+        to study better?</string>
     <string-array name="question_3_options">
         <item>There is not enough time;</item>
         <item>There is no suitable literature and conditions;</item>
@@ -141,11 +143,13 @@
         <item>Philosophical.</item>
     </string-array>
 
-    <string name="question_17">18. Imagine that you earned a million. How would you prefer to spend it?</string>
+    <string name="question_17">18. Imagine that you earned a million.
+        How would you prefer to spend it?</string>
     <string-array name="question_17_options">
         <item>I would travel and see the world;</item>
         <item>I would go abroad to study or invest money in my favorite business;</item>
-        <item>I would buy a cottage with a swimming pool, furniture, a chic car and live for my own pleasure.</item>
+        <item>I would buy a cottage with a swimming pool, furniture,
+            a chic car and live for my own pleasure.</item>
     </string-array>
 
     <string name="greeting">\t\tThe application is a test to identify the ability for independent
