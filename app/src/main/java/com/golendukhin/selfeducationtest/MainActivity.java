@@ -30,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
     private Button previousButton, nextButton, finishButton;
     private RadioGroup radioGroup;
 
+    /**
+     * Creates main activity. Initializes all views.
+     * @param savedInstanceState of activity. If savedInstanceState is not null, rotation of device
+     *                           happened. Data then fetched and applyed to activity.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         if (savedInstanceState != null) {
@@ -57,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
             finishButton.setVisibility(View.VISIBLE);
     }
 
+    /**
+     * Triggered if screen has been rotated
+     * @param outState used to save data, that will be used later after activity is recreated
+     */
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         outState.putInt("questionNumber", questionNumber);
@@ -64,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
     }
 
+    /**
+     * Helper method to initialize variables, that match test passing
+     */
     private void setTestParameters() {
         Resources resources = getResources();
         questions = resources.getStringArray(R.array.questions);
@@ -97,18 +109,20 @@ public class MainActivity extends AppCompatActivity {
                         {2, 3, 1},};
     }
 
+    /**
+     * Previous button pressed method.
+     * Updates activity with previous question.
+     */
     public void previous(View view) {
         questionNumber--;
 
         Animation animationOut = AnimationUtils.loadAnimation(this, R.anim.translate_right_off);
         animationOut.setAnimationListener(new Animation.AnimationListener() {
             @Override
-            public void onAnimationStart(Animation animation) {
-            }
+            public void onAnimationStart(Animation animation) {}
 
             @Override
-            public void onAnimationRepeat(Animation animation) {
-            }
+            public void onAnimationRepeat(Animation animation) {}
 
             @Override
             public void onAnimationEnd(Animation animation) {
@@ -120,18 +134,20 @@ public class MainActivity extends AppCompatActivity {
         radioGroup.startAnimation(animationOut);
     }
 
+    /**
+     * Next button pressed method.
+     * Updates activity with next question.
+     */
     public void next(View view) {
         questionNumber++;
 
         Animation animationOut = AnimationUtils.loadAnimation(this, R.anim.translate_left_off);
         animationOut.setAnimationListener(new Animation.AnimationListener() {
             @Override
-            public void onAnimationStart(Animation animation) {
-            }
+            public void onAnimationStart(Animation animation) {}
 
             @Override
-            public void onAnimationRepeat(Animation animation) {
-            }
+            public void onAnimationRepeat(Animation animation) {}
 
             @Override
             public void onAnimationEnd(Animation animation) {
@@ -143,6 +159,10 @@ public class MainActivity extends AppCompatActivity {
         radioGroup.startAnimation(animationOut);
     }
 
+    /**
+     * Finish button pressed method.
+     * Calculates results of passed test and shows dialog window with results
+     */
     public void finish(View view) {
         String result = getString(R.string.dialog_message) + getResult() + "." + "\n\n" +
                 getString(R.string.take_test_again);
@@ -182,6 +202,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Helper method to update question text view and radio buttons to visualize test progress
+     */
     private void updateViews() {
         previousButton.setVisibility(View.VISIBLE);
         nextButton.setVisibility(View.VISIBLE);
@@ -205,12 +228,20 @@ public class MainActivity extends AppCompatActivity {
         thirdOptionRadioButton.setChecked(answers[questionNumber][2]);
     }
 
+    /**
+     * Helper method.
+     * Updates "answers" variable with options, user choose
+     */
     private void updateAnswers() {
         answers[questionNumber][0] = firstOptionRadioButton.isChecked();
         answers[questionNumber][1] = secondOptionRadioButton.isChecked();
         answers[questionNumber][2] = thirdOptionRadioButton.isChecked();
     }
 
+    /**
+     * Checks if all questions have been answered
+     * @return true if yes, false otherwise
+     */
     private boolean isTestCompleted() {
         int testCompletion = -1;
         for (boolean[] answer : answers) {
@@ -219,6 +250,9 @@ public class MainActivity extends AppCompatActivity {
         return testCompletion == lastQuestion;
     }
 
+    /**
+     * @return string with test results depending on test score
+     */
     private String getResult() {
         int points = calculatePoints();
         if (points < 26) return getString(R.string.very_low);
@@ -233,6 +267,9 @@ public class MainActivity extends AppCompatActivity {
         else return getString(R.string.very_high);
     }
 
+    /**
+     * @return score gained after test completely passed
+     */
     private int calculatePoints() {
         int points = 0;
         for (int i = 0; i < answers.length; i++) {

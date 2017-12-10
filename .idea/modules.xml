@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Self-Education-Test.iml" filepath="$PROJECT_DIR$/.idea/Self-Education-Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Self-Education-Test.iml" filepath="$PROJECT_DIR$/Self-Education-Test.iml" />
+      <module fileurl="file://C:\Android\Self-Education-Test\.idea\Self-Education-Test.iml" filepath="C:\Android\Self-Education-Test\.idea\Self-Education-Test.iml" />
       <module fileurl="file://C:\Android\AndroidStudioProjects\Self-Education-Test\Self-Education-Test.iml" filepath="C:\Android\AndroidStudioProjects\Self-Education-Test\Self-Education-Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
