@@ -136,17 +136,21 @@ public class MainActivity extends AppCompatActivity {
         if (questionNumber == firstQuestion) previousButton.setVisibility(View.GONE);
         else if (questionNumber == lastQuestion) nextButton.setVisibility(View.GONE);
 
+        Animation animationFadeIn = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
+        Animation  animationFadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
+
+        questionTextView.setAnimation(animationFadeOut);
         questionTextView.setText(questions[questionNumber]);
+        questionTextView.setAnimation(animationFadeIn);
 
         firstOptionRadioButton.setText(options[questionNumber][0]);
         secondOptionRadioButton.setText(options[questionNumber][1]);
         thirdOptionRadioButton.setText(options[questionNumber][2]);
 
-        Animation animationFadeIn = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
-        Animation  animationFadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
 
-        questionTextView.setAnimation(animationFadeIn);
-        questionTextView.setAnimation(animationFadeOut);
+
+
+
 
         radioGroup.clearCheck();
         firstOptionRadioButton.setChecked(answers[questionNumber][0]);
