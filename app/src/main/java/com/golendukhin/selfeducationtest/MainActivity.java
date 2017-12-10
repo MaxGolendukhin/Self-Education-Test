@@ -18,19 +18,25 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private final int firstQuestion = 0;
     private final int lastQuestion = 17;
-    private int questionNumber = 0;
-    private String questions [];
-    private String options [][] = new String [18][3];
-    private boolean answers [][] = new boolean [18][3];
     private int [][] answersWeights;
+    private String options [][] = new String [18][3];
+    private String questions [];
+
+    private int questionNumber = 0;
+    private boolean answers [][] = new boolean [18][3];
+
     private TextView questionTextView;
     private RadioButton firstOptionRadioButton, secondOptionRadioButton, thirdOptionRadioButton;
     private Button previousButton, nextButton, finishButton;
     private RadioGroup radioGroup;
-    //private boolean forward;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        if (savedInstanceState != null) {
+            questionNumber = savedInstanceState.getInt("questionNumber");
+            answers = (boolean [][]) savedInstanceState.getSerializable("answers");
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -44,40 +50,15 @@ public class MainActivity extends AppCompatActivity {
         nextButton = findViewById(R.id.next_button);
         finishButton = findViewById(R.id.finish_button);
 
-
-
-
-//        int outAnimationId;
-//        int inAnimationId;
-//
-//        if (forward) {
-//            outAnimationId = R.anim.translate_left_off;
-//            inAnimationId = R.anim.translate_from_right;
-//        } else {
-//            outAnimationId = R.anim.translate_right_off;
-//            inAnimationId = R.anim.translate_from_left;
-//        }
-//
-//        Animation animationOut = AnimationUtils.loadAnimation(this, outAnimationId);
-//        animationOut.setAnimationListener(new Animation.AnimationListener() {
-//            @Override
-//            public void onAnimationStart(Animation animation) {}
-//
-//            @Override
-//            public void onAnimationRepeat(Animation animation) {}
-//
-//            @Override
-//            public void onAnimationEnd(Animation animation) {
-//                Animation animationIn = AnimationUtils.loadAnimation(getApplicationContext(), inAnimationId);
-//                radioGroup.startAnimation(animationIn);
-//
-//            }
-//        });
-//        radioGroup.startAnimation(animationOut);
-
-
         setTestParameters();
         updateViews();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt("questionNumber", questionNumber);
+        outState.putSerializable("answers", answers);
+        super.onSaveInstanceState(outState);
     }
 
     private void setTestParameters() {
@@ -132,8 +113,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         radioGroup.startAnimation(animationOut);
-
-
     }
 
     public void next (View view) {
@@ -155,8 +134,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         radioGroup.startAnimation(animationOut);
-
-
     }
 
     public void finish (View view) {
@@ -208,14 +185,9 @@ public class MainActivity extends AppCompatActivity {
         Animation animationFadeIn = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
         Animation  animationFadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
 
-
         questionTextView.setText(questions[questionNumber]);
         questionTextView.startAnimation(animationFadeOut);
         questionTextView.startAnimation(animationFadeIn);
-
-
-
-
 
         firstOptionRadioButton.setText(options[questionNumber][0]);
         secondOptionRadioButton.setText(options[questionNumber][1]);
@@ -225,10 +197,6 @@ public class MainActivity extends AppCompatActivity {
         firstOptionRadioButton.setChecked(answers[questionNumber][0]);
         secondOptionRadioButton.setChecked(answers[questionNumber][1]);
         thirdOptionRadioButton.setChecked(answers[questionNumber][2]);
-
-
-
-        //radioGroup.startAnimation(rightSwipe);
     }
 
     private void updateAnswers() {

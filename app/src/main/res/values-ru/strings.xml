@@ -186,5 +186,5 @@
     <string name="above_average">выше среднего</string>
     <string name="high">высокий</string>
     <string name="very_high">очень высокий</string>
-    <string name="take_test_again">Пройти тест заново</string>
+    <string name="take_test_again">Пройти тест заново?</string>
 </resources>
