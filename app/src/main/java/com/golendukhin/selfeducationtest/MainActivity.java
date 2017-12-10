@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView questionTextView;
     private RadioButton firstOptionRadioButton, secondOptionRadioButton, thirdOptionRadioButton;
     private Button previousButton, nextButton, finishButton;
-    RadioGroup radioGroup;
+    private RadioGroup radioGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -139,23 +139,24 @@ public class MainActivity extends AppCompatActivity {
         Animation animationFadeIn = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
         Animation  animationFadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
 
-        questionTextView.setAnimation(animationFadeOut);
+
         questionTextView.setText(questions[questionNumber]);
-        questionTextView.setAnimation(animationFadeIn);
+        questionTextView.startAnimation(animationFadeOut);
+        questionTextView.startAnimation(animationFadeIn);
 
         firstOptionRadioButton.setText(options[questionNumber][0]);
         secondOptionRadioButton.setText(options[questionNumber][1]);
         thirdOptionRadioButton.setText(options[questionNumber][2]);
 
+        Animation leftSwipe = AnimationUtils.loadAnimation(this, R.anim.translate_left_off);
+        Animation rightSwipe = AnimationUtils.loadAnimation(this, R.anim.translate_from_right);
 
-
-
-
-
+        radioGroup.startAnimation(leftSwipe);
         radioGroup.clearCheck();
         firstOptionRadioButton.setChecked(answers[questionNumber][0]);
         secondOptionRadioButton.setChecked(answers[questionNumber][1]);
         thirdOptionRadioButton.setChecked(answers[questionNumber][2]);
+        radioGroup.startAnimation(rightSwipe);
     }
 
     private void updateAnswers() {
