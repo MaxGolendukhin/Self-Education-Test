@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
      * Calculates results of passed test and shows dialog window with results
      */
     public void finish(View view) {
-        String result = getString(R.string.dialog_message) + getResult() + "." + "\n\n" +
+        String result = getString(R.string.dialog_message) + " " + getResult() + "." + "\n\n" +
                 getString(R.string.take_test_again);
 
         new AlertDialog.Builder(this, R.style.AlertDialogCustom)
