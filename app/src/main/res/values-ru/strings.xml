@@ -141,7 +141,7 @@
     <string name="question_15">16. Удастся ли Вам в жизни добиться того, о чем Вы мечтаете?</string>
     <string-array name="question_15_options">
         <item>Думаю, что да;</item>
-        <item>Скорее всего да;</item>
+        <item>Скорее всего, да;</item>
         <item>Как повезет.</item>
     </string-array>
 
@@ -167,9 +167,9 @@
         возвращаюсь вновь к уже отвеченным вопросам.</string>
 
     <string name="start_test">начать тест</string>
-    <string name="previous">предыдущий</string>
+    <string name="previous">ранее</string>
     <string name="finish">закончить</string>
-    <string name="next">следующий</string>
+    <string name="next">далее</string>
     <string name="cancel_label">ОТМЕНА</string>
     <string name="toast">Вы пропустили один или несколько вопросов.
         Вернитесь к предыдущим вопросам, чтобы ответить на них.</string>

@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton firstOptionRadioButton, secondOptionRadioButton, thirdOptionRadioButton;
     private Button previousButton, nextButton, finishButton;
     private RadioGroup radioGroup;
+    //private boolean forward;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,38 @@ public class MainActivity extends AppCompatActivity {
         previousButton = findViewById(R.id.previous_button);
         nextButton = findViewById(R.id.next_button);
         finishButton = findViewById(R.id.finish_button);
+
+
+
+
+//        int outAnimationId;
+//        int inAnimationId;
+//
+//        if (forward) {
+//            outAnimationId = R.anim.translate_left_off;
+//            inAnimationId = R.anim.translate_from_right;
+//        } else {
+//            outAnimationId = R.anim.translate_right_off;
+//            inAnimationId = R.anim.translate_from_left;
+//        }
+//
+//        Animation animationOut = AnimationUtils.loadAnimation(this, outAnimationId);
+//        animationOut.setAnimationListener(new Animation.AnimationListener() {
+//            @Override
+//            public void onAnimationStart(Animation animation) {}
+//
+//            @Override
+//            public void onAnimationRepeat(Animation animation) {}
+//
+//            @Override
+//            public void onAnimationEnd(Animation animation) {
+//                Animation animationIn = AnimationUtils.loadAnimation(getApplicationContext(), inAnimationId);
+//                radioGroup.startAnimation(animationIn);
+//
+//            }
+//        });
+//        radioGroup.startAnimation(animationOut);
+
 
         setTestParameters();
         updateViews();
@@ -82,12 +115,48 @@ public class MainActivity extends AppCompatActivity {
 
     public  void previous(View view) {
         questionNumber--;
-        updateViews();
+
+        Animation animationOut = AnimationUtils.loadAnimation(this, R.anim.translate_right_off);
+        animationOut.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {}
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {}
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                Animation animationIn = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.translate_from_left);
+                radioGroup.startAnimation(animationIn);
+                updateViews();
+            }
+        });
+        radioGroup.startAnimation(animationOut);
+
+
     }
 
     public void next (View view) {
         questionNumber++;
-        updateViews();
+
+        Animation animationOut = AnimationUtils.loadAnimation(this, R.anim.translate_left_off);
+        animationOut.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {}
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {}
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                Animation animationIn = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.translate_from_right);
+                radioGroup.startAnimation(animationIn);
+                updateViews();
+            }
+        });
+        radioGroup.startAnimation(animationOut);
+
+
     }
 
     public void finish (View view) {
@@ -144,19 +213,22 @@ public class MainActivity extends AppCompatActivity {
         questionTextView.startAnimation(animationFadeOut);
         questionTextView.startAnimation(animationFadeIn);
 
+
+
+
+
         firstOptionRadioButton.setText(options[questionNumber][0]);
         secondOptionRadioButton.setText(options[questionNumber][1]);
         thirdOptionRadioButton.setText(options[questionNumber][2]);
 
-        Animation leftSwipe = AnimationUtils.loadAnimation(this, R.anim.translate_left_off);
-        Animation rightSwipe = AnimationUtils.loadAnimation(this, R.anim.translate_from_right);
-
-        radioGroup.startAnimation(leftSwipe);
         radioGroup.clearCheck();
         firstOptionRadioButton.setChecked(answers[questionNumber][0]);
         secondOptionRadioButton.setChecked(answers[questionNumber][1]);
         thirdOptionRadioButton.setChecked(answers[questionNumber][2]);
-        radioGroup.startAnimation(rightSwipe);
+
+
+
+        //radioGroup.startAnimation(rightSwipe);
     }
 
     private void updateAnswers() {
