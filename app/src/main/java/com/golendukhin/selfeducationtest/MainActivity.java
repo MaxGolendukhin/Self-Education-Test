@@ -52,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
         setTestParameters();
         updateViews();
+
+        if (isTestCompleted() && savedInstanceState != null) finishButton.setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -165,7 +167,6 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onRadioButtonClicked(View view) {
         updateAnswers();
-//        finishButton.setVisibility(View.VISIBLE);
         if (isTestCompleted()) {
             finishButton.setVisibility(View.VISIBLE);
         } else {
