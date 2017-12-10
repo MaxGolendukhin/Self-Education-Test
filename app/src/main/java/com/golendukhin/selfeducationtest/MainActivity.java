@@ -7,6 +7,8 @@ import android.app.AlertDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -107,6 +109,14 @@ public class MainActivity extends AppCompatActivity {
                 .show();
     }
 
+    /**
+     * Launched when one of radio buttons is checked.
+     * Checks if all questions are answered and shows button to finish test.
+     * In case if user have answered last question, but have skipped one ore more questions before,
+     * toast with notification appears.
+     * Method is marked as unused, but don't believe to IntelliJ, onClick -
+     * tag is defined in styles.xml.
+     */
     public void onRadioButtonClicked(View view) {
         updateAnswers();
 //        finishButton.setVisibility(View.VISIBLE);
@@ -114,7 +124,8 @@ public class MainActivity extends AppCompatActivity {
             finishButton.setVisibility(View.VISIBLE);
         } else {
             if (lastQuestion == questionNumber){
-                Toast.makeText(this, getString(R.string.toast), Toast.LENGTH_LONG).show();
+                Toast.makeText(this,
+                        getString(R.string.toast), Toast.LENGTH_LONG).show();
             }
         }
     }
@@ -130,6 +141,12 @@ public class MainActivity extends AppCompatActivity {
         firstOptionRadioButton.setText(options[questionNumber][0]);
         secondOptionRadioButton.setText(options[questionNumber][1]);
         thirdOptionRadioButton.setText(options[questionNumber][2]);
+
+        Animation animationFadeIn = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
+        Animation  animationFadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
+
+        questionTextView.setAnimation(animationFadeIn);
+        questionTextView.setAnimation(animationFadeOut);
 
         radioGroup.clearCheck();
         firstOptionRadioButton.setChecked(answers[questionNumber][0]);
