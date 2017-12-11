@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
      * Updates activity with previous question.
      */
     public void previous(View view) {
-        questionNumber--;
+        if (questionNumber > 0) questionNumber--;
 
         Animation animationOut = AnimationUtils.loadAnimation(this, R.anim.translate_right_off);
         animationOut.setAnimationListener(new Animation.AnimationListener() {
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
      * Updates activity with next question.
      */
     public void next(View view) {
-        questionNumber++;
+        if (questionNumber < 17) questionNumber++;
 
         Animation animationOut = AnimationUtils.loadAnimation(this, R.anim.translate_left_off);
         animationOut.setAnimationListener(new Animation.AnimationListener() {
